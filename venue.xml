@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE venue_info [
+<!ELEMENT venue_info (venue*)>
+<!ATTLIST venue id ID #REQUIRED>
+<!ELEMENT venue (venue_name, venue_location, venue_capacity)>
+<!ELEMENT venue_location (address+)>
+<!ELEMENT venue_capacity (#PCDATA)>
+<!ATTLIST address id ID #REQUIRED>
+<!ELEMENT address EMPTY>
+<!ATTLIST event id ID #REQUIRED>
+<!ELEMENT event (#PCDATA)>
+]>
+<venue_info>
+  <venue id="v1">
+    <venue_location>
+      <address id="add123"/>
+    </venue_location>
+    <venue_capacity>50000</venue_capacity>
+    </venue>
+  
+    <venue id = "ve2">
+      <venue_location>
+        <address id= "add245"/>
+      </venue_location>
+      <venue_capacity>77000</venue_capacity>
+    </venue>
+    
+    <venue id = "ve3">
+      <venue_location>
+        <address id = "addr567"/>
+      </venue_location>
+      <venue_capacity>100000</venue_capacity>
+    </venue>
+  
+  
+
+
+</venue_info>

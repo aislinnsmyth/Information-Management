@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE event_info [
+<!ELEMENT event_info (event*)>
+<!ATTLIST event id ID #REQUIRED>
+<!ELEMENT event (event_location, event_date, event_time, event_ticket)>
+<!ELEMENT event_location (address+)>
+<!ATTLIST address id ID #REQUIRED>
+<!ELEMENT address EMPTY>
+<!ELEMENT event_date (#PCDATA)> 
+<!ELEMENT event_time (#PCDATA)> 
+<!ELEMENT event_ticket (ticket+)>
+<!ATTLIST ticket id ID #REQUIRED>
+<!ELEMENT ticket EMPTY>
+]>
+<event_info>
+  <event id = "ev01">
+    <event_location>
+      <address id = "add123"/>
+    </event_location>
+    <event_date>10/12/2020</event_date>
+    <event_time>20:00</event_time>
+    <event_ticket>
+      <ticket id = "t01"/>
+     </event_ticket>
+   </event>
+      
+      <event id = "ev02">
+        <event_location>
+          <address id = "add245"/>
+        </event_location>
+        <event_date>11/12/2020</event_date>
+        <event_time>19:00</event_time>
+        <event_ticket>
+          <ticket id = "t02"/> 
+        </event_ticket>
+     </event>
+        
+      <event id = "ev03">
+        <event_location>
+          <address id = "add567"/>
+        </event_location>
+        <event_date>08/09/2020</event_date>
+        <event_time>21:00</event_time>
+        <event_ticket>
+          <ticket id = "t03"/>
+        </event_ticket>
+     </event>
+</event_info>
